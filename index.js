@@ -1,8 +1,20 @@
 
 //import the simple-statistics package
 let ss = require("simple-statistics");
+const lodash = require("lodash")
 
-//create an array of numnbers to work with
+let message = "Hello World"
+console.log(message)
+
+
+let name = "patrick"
+console.log(name)
+
+let revisedName = lodash.upperFirst(name)
+console.log("new name: ",revisedName)
+
+
+//create an array of numbers to work with
 let numbers = [62, 60, 53, 9, 11, 14, 15, 16, 17, 65, 88];
 
 let smallestNumber = ss.min(numbers);
@@ -17,3 +29,5 @@ console.log(largestNumber)
 console.log(sumOfNum)
 console.log(meanOfNum)
 console.log (roundedMean)
+
+
